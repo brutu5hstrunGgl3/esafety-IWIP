@@ -72,6 +72,7 @@
                                             <th>Pemateri</th>
                                             <th>Jadwal</th>
                                             <th>Status</th>
+                                            <th>Action</th>
                                             
                                         </tr>
 

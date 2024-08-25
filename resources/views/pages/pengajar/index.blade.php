@@ -17,12 +17,12 @@
                 <h1>Learning module system</h1>
                 <div class="section-header-button">
                     <a href="{{ route('lecturer.create') }}"
-                        class="btn btn-primary">Add New</a>
+                        class="btn btn-primary">Tambah Pemateri</a>
                 </div>
             @endif
                
             </div>
-            <div class="section-body">
+          
                 
             @include('layouts.alert')
 
@@ -74,6 +74,8 @@
                                             
                                             <th>Materi</th>
                                             <th>Jadwal</th>
+                                            
+                                            <th>Action</th>
                                             
                                             
                                         </tr>

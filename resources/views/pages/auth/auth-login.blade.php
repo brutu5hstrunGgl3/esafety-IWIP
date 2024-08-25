@@ -51,6 +51,19 @@
                     @enderror
 
             </div>
+            <div class="form-group mt-2 mb-2">
+                <img src="{{ captcha_src('math') }}" alt="captcha">
+                    
+                    <input type="text" name="captcha"
+                         class="form-control @error('captcha') is-invalid @enderror"
+                         placeholder="Enter Captcha">
+                    @error('captcha')
+
+                    <div class="invalid-feedback">{{ $message }}</div>
+
+                    @enderror
+
+                </div>
             
 
    

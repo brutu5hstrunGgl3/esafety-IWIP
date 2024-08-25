@@ -74,6 +74,7 @@
                                             <th>Position</th>
                                             <th>Address</th>
                                             <th>Divisi</th>
+                                            <th>Action</th>
                                         </tr>
                                         @foreach ($users as $user)
                                             <tr>

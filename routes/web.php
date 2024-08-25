@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\AttendanceController;
+use Mews\Captcha\CaptchaController;
 use App\Http\Controllers\PemateriController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -14,7 +15,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    // Route::get('/captcha-refresh', [CaptchaController::class, 'refresh']);
+    Route::get('/captcha-refresh', [CaptchaController::class, 'refresh']);
     Route::get('home', function () {
         return view('pages.app.dashboard_lms');
         

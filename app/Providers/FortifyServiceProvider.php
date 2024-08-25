@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Laravel\Fortify\Fortify;
+use Illuminate\Support\Facades\Auth;
+
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -50,11 +52,28 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::registerView(function () {
             return view('pages.auth.auth-register');
+
+            
             // activity()->causedBy($request->user())->log('User melakukan aktivitas login');
         });
 
         Fortify::requestPasswordResetLinkView(function () {
             return view('pages.auth.auth-forgot-password');
+        });
+
+        Fortify::authenticateUsing(function (Request $request){
+
+            $request->validate([
+                'email' => 'required|email',
+                'password' => 'required',
+                'captcha' => 'required|captcha'
+            ]);
+            // attemp to login the user
+        
+            if (Auth::attempt($request->only('email', 'password'))) {
+                    return Auth::user();
+            }
+
         });
 
 

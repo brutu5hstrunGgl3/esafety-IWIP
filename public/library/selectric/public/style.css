@@ -34,7 +34,7 @@ h4 a:hover {
 }
 
 .cf, .demo {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .bt,
@@ -239,7 +239,7 @@ table code {
   display: inline-block;
   vertical-align: middle;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .features li {
@@ -338,7 +338,7 @@ table code {
   display: inline-block;
   vertical-align: top;
   zoom: 1;
-  *display: inline;
+  display: inline;
   font-size: 14px;
   border-radius: 4px;
   -webkit-transition: .1s;
@@ -506,7 +506,7 @@ table code {
   display: inline-block;
   vertical-align: top;
   zoom: 1;
-  *display: inline;
+  display: inline;
   text-decoration: none;
 }
 
@@ -771,7 +771,7 @@ table code {
   display: inline-block;
   vertical-align: top;
   zoom: 1;
-  *display: inline;
+  display: inline;
   margin: 0 5px;
   width: 90px;
 }

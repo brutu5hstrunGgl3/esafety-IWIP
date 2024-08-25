@@ -2,6 +2,7 @@
 
 @section('title', 'e-safety IWIP')
 
+
 @push('style')
     <!-- CSS Libraries -->
     <link rel="stylesheet"
@@ -63,19 +64,16 @@
                                     <div><img alt="image"
                                             src="{{ asset('img/iwip/image2.jpg') }}">
                                         <div class="slider-caption">
-                                        <div class="breadcrumb-item active"><a href=""> Kampus Panca Sakti Cikarang </a></div>
-                                            <div class="slider-description">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</div>
+                                        <div class="breadcrumb-item active"><a href=""></a></div>
+                                            <div class="slider-description">
+                                               </div>
                                         </div>
                                     </div>
                                     <div><img alt="image"
                                             src="{{ asset('img/iwip/image3.jpg') }}">
                                         <div class="slider-caption">
-                                            <div class="slider-title">Image 3</div>
-                                            <div class="slider-description">Lorem ipsum dolor sit amet, consectetur
-                                                adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</div>
+                                            <div class="slider-title"></div>
+                                            <div class="slider-description"></div>
                                         </div>
                                     </div>
                                     

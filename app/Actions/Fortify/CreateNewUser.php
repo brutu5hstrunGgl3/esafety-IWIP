@@ -18,7 +18,16 @@ class CreateNewUser implements CreatesNewUsers
      * @param  array<string, string>  $input
      */
     public function create(array $input): User
+    
     {
+        //untuk batas registrasi
+        $maxUsers = 200;
+        $currentUserCount = User::count();
+        if ($currentUserCount >= $maxUsers) {
+            // Jika jumlah pengguna sudah mencapai batas, lemparkan exception
+            abort(403, 'Pengguna sudah melebihi batas kuota');
+        }
+
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => [

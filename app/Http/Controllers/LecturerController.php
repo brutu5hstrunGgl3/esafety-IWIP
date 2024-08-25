@@ -41,8 +41,7 @@ class LecturerController extends Controller
             'position' => $request['position'],
             'materi' => $request['materi'],
             'jadwal' => $request['jadwal'],
-            'created_at' => $request['created_at'],
-            'updated_at' => $request['updated_at'],
+            
             
         ]);
         return redirect()->route('lecturer.index')->with('success', 'Pemateri baru telah dibuat.');

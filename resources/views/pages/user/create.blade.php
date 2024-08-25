@@ -10,11 +10,9 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>New User</h1>
+                <h1>esafety-IWIP</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Users</a></div>
-                    <div class="breadcrumb-item">New User</div>
+                   
                 </div>
             </div>
 
